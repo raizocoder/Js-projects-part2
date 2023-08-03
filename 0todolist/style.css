@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(148, 234, 131), rgb(82, 145, 233));
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.todo-app {
+  background-color: white;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+}
+.box {
+  display: block;
+  padding: 5px;
+  height: 100px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(156, 237, 156);
+  font-size: 25px;
+  box-shadow: 13px 16px 18px -9px rgba(0, 0, 0, 0.1);
+}
+.add {
+  font-size: 25px;
+  padding: 10px;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #52e88b;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+  &:hover {
+    background-color: gainsboro;
+  }
+}
+.list {
+  margin: 20px;
+  background-color: rgb(133, 227, 227);
+  width: 100%;
+  list-style-type: none;
+}
+li {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgb(235, 96, 235);
+  border-radius: 10px;
+}
+.delete {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  font-size: 20px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  height: 30px;
+  &:hover {
+    background-color: rgb(185, 35, 35);
+  }
+}
+
+.edit{
+    position: absolute;
+    right: 100px;
+    bottom: 15px;
+    font-size: 20px;
+    background-color: rgb(217, 226, 28);
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    height: 30px;
+    &:hover {
+      background-color: rgb(223, 230, 17);
+    }
+  
+}
+.text {
+  margin-left: 30px;
+  font-size: 20px;
+}
+
