@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Countdown</title>
+  </head>
+  <body>
+    <h1>Countdown Timer</h1>  
+  <main>
+    <div class="main-container">
+      <div class="input">  
+        <input type="datetime-local" class="current-date" id="current-date">
+        <button onclick="startCountDown()" class="reset">start</button>
+        <button onclick="ResetCountDown()" class="reset">Reset</button>
+        <!-- <input type="date" class="Future-date" id="current-date"> -->
+      </div>
+      <div class="container"> 
+        <div class="timer">
+          <span id="days"></span>
+          <span>days</span>
+        </div>
+  
+        <div class="timer">
+          <span id="hours"></span>
+          <span>hours</span>
+        </div>
+  
+        <div class="timer">
+          <span id="mins"></span>
+          <span>minutes</span>
+        </div>
+  
+        <div class="timer">
+          <span id="secs"></span>
+          <span>seconds</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  </body>
+</html>
