@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="address-book-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Contact App</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <i class="fa-solid fa-address-book"></i>Contact Book</a
+      >
+    </div>
+    <div class="form-container">
+      <form action="" class="formdata">
+        <h1>Contact Details Fill</h1>
+        <label for="Fullname">Name</label>
+        <input type="text" name="fullname" id="Fullname" required />
+        <label for="Email">Email</label>
+        <input type="email" name="email" id="Email" required />
+        <label for="Phone">Number</label>
+        <input type="tel" name="phone" id="Phone" required />
+        <button type="submit" class="save">Save</button>
+      </form>
+    </div>
+    <div class="middle">
+      <a href="index.html"> Contact List</a>
+      <div class="search-bar">
+        <input
+          type="search"
+          name=""
+          class="searchfield"
+          placeholder="Search Contact"
+        />
+        <button class="searchbtn" onclick="SearchContact()">Search</button>
+      </div>
+      <button class="clearall" onclick="clearALL()">Clear all</button>
+    </div>
+    <div class="contactlist">
+      <!-- <div class="items">
+            <span>&times;</span>
+            <h5>Name:</h5>
+            <div>Rohit</div><hr>
+            <h5>Email:</h5>
+            <div>rohitkumar@gmail.com</div><hr>
+            <h5>Number:</h5>
+            <div>9999999999</div><hr>
+        </div> -->
+    </div>
+  </body>
+</html>
